@@ -6,10 +6,10 @@
     - { src: 'virtualbox' }
 - git:    
     repo: '{{ item.url }}'
-    dest: ~/workpace
+    dest: '~/workspace/{{ item.dest }}'
   with_items:
-    - { url: 'https://github.com/sdevineau/jhipsterSampleApplication.git' }
-    - { url: 'https://github.com/sdevineau/gymsuedoise-booker.git' }
-    - { url: 'https://github.com/sdevineau/saml-plugin.git' }
-    - { url: 'https://github.com/sdevineau/kata-string-calculator-java-8.git' }
-    - { url: 'https://github.com/sdevineau/role-strategy-plugin.git' }
+    - { url: 'https://github.com/sdevineau/jhipsterSampleApplication.git', dest: 'jhipster-sample-app' }
+    - { url: 'https://github.com/sdevineau/gymsuedoise-booker.git', dest: 'gymsuedoise-booker'}
+    - { url: 'https://github.com/sdevineau/saml-plugin.git', dest: 'jenkins-saml-plugin' }
+    - { url: 'https://github.com/sdevineau/kata-string-calculator-java-8.git', dest: 'kata-string-calculator-java-8' }
+    - { url: 'https://github.com/sdevineau/role-strategy-plugin.git', dest: 'jenkins-role-strategy-plugin' }
