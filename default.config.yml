@@ -90,7 +90,6 @@ homebrew_cask_apps:
   - vlc
   - alfred
   - transmission
-  - google-drive-file-stream
   - java-jdk-javadoc
   - java
 # See `geerlingguy.mas` role documentation for usage instructions.
