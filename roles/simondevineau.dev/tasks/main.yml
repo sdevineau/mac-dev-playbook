@@ -1,0 +1,15 @@
+- file:
+    path: '~/{{ item.src }}'
+    state: directory
+  with_items:
+    - { src: 'workspace' }
+    - { src: 'virtualbox' }
+- git:    
+    repo: '{{ item.url }}'
+    dest: ~/workpace
+  with_items:
+    - { url: 'https://github.com/sdevineau/jhipsterSampleApplication.git' }
+    - { url: 'https://github.com/sdevineau/gymsuedoise-booker.git' }
+    - { url: 'https://github.com/sdevineau/saml-plugin.git' }
+    - { url: 'https://github.com/sdevineau/kata-string-calculator-java-8.git' }
+    - { url: 'https://github.com/sdevineau/role-strategy-plugin.git' }

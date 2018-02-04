@@ -12,6 +12,10 @@
       tags: ['always']
 
   roles:
+    - role: simondevineau.fixbugs
+      tags: ['mine','fixbugs']
+    - role: simondevineau.dev
+      tags: ['mine','dev']
     - role: geerlingguy.homebrew
       tags: ['homebrew']
     - role: geerlingguy.dotfiles

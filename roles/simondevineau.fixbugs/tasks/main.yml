@@ -1,0 +1,16 @@
+- file:
+    path: '/usr/local/{{ item.src }}'
+    state: directory
+    owner: simondevineau
+    group: admin
+    mode: 0775
+    recurse: true 
+  become: true
+  with_items:
+    - { src: 'Caskroom' }
+    - { src: 'Cellar' }
+    - { src: 'Homebrew' }
+    - { src: 'bin' }
+    - { src: 'var' }
+    - { src: 'etc' }
+
