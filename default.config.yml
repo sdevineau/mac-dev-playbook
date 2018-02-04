@@ -43,7 +43,11 @@ homebrew_installed_packages:
   - pv
   - wget
   - wrk
-
+  - maven
+  - groovy
+  - gradle
+   
+  
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
@@ -55,7 +59,7 @@ homebrew_cask_apps:
   - dropbox
   # - fing # Download link keeps getting changed, d'oh!
   - firefox
-  - google-chrome
+#  - google-chrome
   - handbrake
   - licecap
   - limechat
@@ -67,7 +71,28 @@ homebrew_cask_apps:
   - transmit
   - vagrant
   - virtualbox
-
+  - eclipse-jee
+  - franz
+  - github
+  - dolphin
+  - filezilla
+  - coda
+  - daisydisk
+  - disk-sensei
+  - flux
+  - jdownloader
+  - iterm2
+  - private-internet-access
+  - teamviewer
+  - spotify
+  - soapui
+  - whatsapp
+  - vlc
+  - alfred
+  - transmission
+  - google-drive-file-stream
+  - java-jdk-javadoc
+  - java
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
 mas_email: ""
